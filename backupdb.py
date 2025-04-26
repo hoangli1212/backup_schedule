@@ -15,7 +15,7 @@ sender_email = os.getenv("SENDER_EMAIL")
 sender_password = os.getenv("SENDER_PASSWORD")
 receiver_email = os.getenv("RECEIVER_EMAIL")
 
-file_SQL = '"C:/Users/84815/Downloads/QuanLyDeAn.sql"' 
+file_SQL = 'C:/Users/84815/Downloads/QuanLyDeAn.sql' 
 backup_folder = 'D:/RPA/BaiTap/Backup/backup'
 
 def send_email(subject, body):
