@@ -14,9 +14,8 @@ load_dotenv()
 sender_email = os.getenv("SENDER_EMAIL")
 sender_password = os.getenv("SENDER_PASSWORD")
 receiver_email = os.getenv("RECEIVER_EMAIL")
-if not sender_email or not sender_password or not receiver_email:
-    raise ValueError("Thiếu biến môi trường! Kiểm tra lại file .env")
-file_SQL = 'D:/RPA/BaiTap/Backup/QuanLyDeAn.sql'  # Đây là file, không phải folder
+
+file_SQL = '"C:/Users/84815/Downloads/QuanLyDeAn.sql"' 
 backup_folder = 'D:/RPA/BaiTap/Backup/backup'
 
 def send_email(subject, body):
